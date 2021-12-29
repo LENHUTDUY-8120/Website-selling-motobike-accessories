@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="../css/style_admin.css" rel="stylesheet">
+    <title>Xe</title>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <i class="fas fa-store"></i>
+                <span>81XE</span>
+            </div>
+            <div class="list-group list-group-flush my-3">
+                <a href="product.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-toolbox"></i>
+                    <span>SẢN PHẨM</span>
+                </a>
+                <a href="Xe.html" class="list-group-item list-group-item-action bg-transparent second-text active">
+                    <i class="fas fa-motorcycle"></i>
+                    <span>Xe</span>
+                </a>
+                <a href="cuahang.html" class="list-group-item list-group-item-action bg-transparent second-text ">
+                    <i class="fas fa-store"></i>
+                    <span>CHI NHÁNH</span>
+                </a>
+                <a href="order.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold ">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>ĐƠN HÀNG</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    <h2 class="fs-2 m-0">XE</h2>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+            <section class="container text-right pt-5 py-4">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="far fa-plus"></i> Thêm mới
+                </button>
+            </section>
+            <section id="table-container" class="container">
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <td>Mã</td>
+                            <td>Tên</td>
+                            <td>Xóa</td>
+                        </tr>
+                    </thead>
+                    <tbody id="content-all-brand">
+                        
+                    </tbody>
+                </table>
+            </section>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Thêm mới</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fal fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="xeForm" onsubmit="addXe()" role="form" class="form-vertical">
+                                <div class="form-group text-left">
+                                    <label>Tên</label>
+                                    <input id="tenXe" class="form-control" type="text" placeholder="Nhập tên xe" required>
+                                </div>
+                                <div class="form-group text-left">
+                                    <label>Mã</label>
+                                    <input id="codeXe" class="form-control" type="text" placeholder="Nhập Mã xe" required>
+                                </div>
+                                <div class="form-group text-center">
+                                    <button type="submit" form="xeForm" class="btn btn-success">Lưu</button>
+                                    <button type="button" onclick="closeModal()" class="btn btn-secondary">Hủy</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------------------Script------------------------------------------------------>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/xe.js"></script>
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+
+    </script>
+</body>
+
+</html>

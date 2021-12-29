@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="../css/style_admin.css" rel="stylesheet">
+    <title>Product</title>
+
+    <style>
+        .dropdown-check-list {
+            background-color: white;
+            width: 100%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .dropdown-check-list .anchor {
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+            padding: 5px 50px 5px 10px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+
+        .dropdown-check-list .anchor:after {
+            position: absolute;
+            content: "";
+            border-left: 2px solid black;
+            border-top: 2px solid black;
+            padding: 5px;
+            right: 10px;
+            top: 20%;
+            -moz-transform: rotate(-135deg);
+            -ms-transform: rotate(-135deg);
+            -o-transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+        }
+
+        .dropdown-check-list .anchor:active:after {
+            right: 8px;
+            top: 21%;
+        }
+
+        .dropdown-check-list ul.items {
+            padding: 2px;
+            display: none;
+            margin: 0;
+            border: 1px solid #ccc;
+            border-top: none;
+            height: 200px;
+            overflow: scroll;
+            padding: 0px;
+        }
+
+        .dropdown-check-list ul.items li {
+            list-style: none;
+            white-space: nowrap;
+            width: 200px;
+            float: left;
+            padding: 2px 5px;
+        }
+
+        .dropdown-check-list ul.items li:nth-child(2n) {
+
+            float: right;
+        }
+
+        .dropdown-check-list.visible .anchor {
+            color: #0094ff;
+        }
+
+        .dropdown-check-list.visible .items {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <i class="fas fa-store"></i>
+                <span>81XE</span>
+            </div>
+            <div class="list-group list-group-flush my-3">
+                <a href="dashboard.html" class="list-group-item list-group-item-action bg-transparent second-text ">
+                    <i class="fas fa-tachometer-alt me-2"></i>
+                    <span>THỐNG KÊ</span>
+                </a>
+                <a href="product.html"
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold active">
+                    <i class="fas fa-toolbox"></i>
+                    <span>SẢN PHẨM</span>
+                </a>
+                <a href="Xe.html" class="list-group-item list-group-item-action bg-transparent second-text ">
+                    <i class="fas fa-motorcycle"></i>
+                    <span>Xe</span>
+                </a>
+                <a href="cuahang.html" class="list-group-item list-group-item-action bg-transparent second-text ">
+                    <i class="fas fa-store"></i>
+                    <span>CHI NHÁNH</span>
+                </a>
+                <a href="order.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold ">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>ĐƠN HÀNG</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    <h2 class="fs-2 m-0">SẢN PHẨM</h2>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+            <section class="container text-center">
+                <h2 id="title" class="font-weight-bold"></h2>
+                <hr>
+            </section>
+            <section class="container">
+                <div class="col-sm-10" style="margin: auto;">
+                    <form role="form" id="product-form"  class="form-horizontal">
+                        <div class="form-group">
+                            <label class="form-label">Tên sản phẩm:</label>
+                            <input id="ptitle" name="name" class="form-control" type="text" placeholder="Nhập vào tên sản phẩm"
+                            required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Mã sản phẩm:</label>
+                            <input id="pcode" class="form-control" type="text" placeholder="Nhập vào mã sản phẩm"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Đơn vị</label>
+                            <span id="donvi-mess" style="color:red; float:right;">*</span>
+                            <select id="don-vi" class="form-control" name="donvi" required>
+                                <option value=0>-- Chọn đơn vị</option>
+                                <option value="cái">cái</option>
+                                <option value="cặp">cặp</option>
+                                <option value="chay">chay</option>
+                                <option value="bình">bình</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Giá:</label>
+                            <input id="price" class="form-control" type="text" placeholder="Nhập giá sản phẩm" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Loại sản phẩm chung:</label>
+                            <span id="spchung-mess" style="color:red; float:right;">*</span>
+                            <select class="form-control" id="spchung" name="spchung" required>
+                                <option value=0>-- Chọn loại sản phẩm chung</option>
+
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Loại sản phẩm riêng:</label>
+                            <span id="sprieng-mess" style="color:red; float:right;">*</span>
+                            <select class="form-control" id="sprieng" name="sprieng" required>
+                                <option value=0>-- Chọn loại sản phẩm riêng</option>
+
+                            </select>
+                        </div>
+                        <div id="list1" class="dropdown-check-list">
+                            <span class="anchor">-- Chọn xe tương thích</span>
+                            <ul class="items" id="list-xe">
+                            </ul>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Mô tả chi tiết</label>
+                            <textarea class="form-control" id="ckeditor5" placeholder="Nhập mô tả sản phẩm"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-file">
+                                <input type="file" id="file-input" multiple>
+                                <div class="gallery" id="preview"></div>
+                            </div>
+                        </div>
+                        <div class="form-group mt-5 mb-5">
+                            <button type="submit" form="product-form" class="btn-primary btn-lg btn-block">Lưu</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- -----------------------------------------Script------------------------------------------------------>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="ckeditor5/ckeditor.js"></script>
+    <script src="../js/admin_sproduct.js"></script>
+    <script>
+        let editor;
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+
+        ClassicEditor
+            .create(document.querySelector('#ckeditor5'))
+            .then(newEditor => {
+                editor = newEditor;
+            })
+            .catch(error => {
+                console.error(error);
+            })
+
+        function previewImages() {
+
+            $("#preview").html("");
+            var preview = document.querySelector('#preview');
+
+            if (this.files) {
+                [].forEach.call(this.files, readAndPreview);
+            }
+
+            function readAndPreview(file) {
+
+                // Make sure `file.name` matches our extensions criteria
+                if (!/\.(jpe?g|png|gif)$/i.test(file.name)) {
+                    return alert(file.name + " is not an image");
+                } // else...
+
+                var reader = new FileReader();
+
+                reader.addEventListener("load", function () {
+                    var image = new Image();
+                    image.height = 100;
+                    image.title = file.name;
+                    image.src = this.result;
+                    preview.appendChild(image);
+                });
+
+                reader.readAsDataURL(file);
+
+            }
+
+        }
+
+        document.querySelector('#file-input').addEventListener("change", previewImages);
+
+        var checkList = document.getElementById('list1');
+        checkList.getElementsByClassName('anchor')[0].onclick = function (evt) {
+            if (checkList.classList.contains('visible'))
+                checkList.classList.remove('visible');
+            else
+                checkList.classList.add('visible');
+        }
+    </script>
+</body>
+
+</html>

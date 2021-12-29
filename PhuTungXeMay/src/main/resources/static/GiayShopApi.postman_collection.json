@@ -1,0 +1,2008 @@
+{
+	"info": {
+		"_postman_id": "aa8af851-0594-42ca-8bb2-a1cd0225ac10",
+		"name": "GiayShopApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Address",
+			"item": [
+				{
+					"name": "get All Tinh Thanh Pho",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/address/TTP",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"address",
+								"TTP"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get All Tinh Thanh Pho",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/address/TTP",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"address",
+										"TTP"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 08 Nov 2021 07:21:41 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"name\": \"Thành phố Hà Nội\",\n        \"matp\": \"01\"\n    },\n    {\n        \"name\": \"Tỉnh Hà Giang\",\n        \"matp\": \"02\"\n    },\n    {\n        \"name\": \"Tỉnh Cao Bằng\",\n        \"matp\": \"04\"\n    },\n    {\n        \"name\": \"Tỉnh Bắc Kạn\",\n        \"matp\": \"06\"\n    },\n    {\n        \"name\": \"Tỉnh Tuyên Quang\",\n        \"matp\": \"08\"\n    },\n    {\n        \"name\": \"Tỉnh Lào Cai\",\n        \"matp\": \"10\"\n    },\n    {\n        \"name\": \"Tỉnh Điện Biên\",\n        \"matp\": \"11\"\n    },\n    {\n        \"name\": \"Tỉnh Lai Châu\",\n        \"matp\": \"12\"\n    },\n    {\n        \"name\": \"Tỉnh Sơn La\",\n        \"matp\": \"14\"\n    },\n    {\n        \"name\": \"Tỉnh Yên Bái\",\n        \"matp\": \"15\"\n    },\n    {\n        \"name\": \"Tỉnh Hoà Bình\",\n        \"matp\": \"17\"\n    },\n    {\n        \"name\": \"Tỉnh Thái Nguyên\",\n        \"matp\": \"19\"\n    },\n    {\n        \"name\": \"Tỉnh Lạng Sơn\",\n        \"matp\": \"20\"\n    },\n    {\n        \"name\": \"Tỉnh Quảng Ninh\",\n        \"matp\": \"22\"\n    },\n    {\n        \"name\": \"Tỉnh Bắc Giang\",\n        \"matp\": \"24\"\n    },\n    {\n        \"name\": \"Tỉnh Phú Thọ\",\n        \"matp\": \"25\"\n    },\n    {\n        \"name\": \"Tỉnh Vĩnh Phúc\",\n        \"matp\": \"26\"\n    },\n    {\n        \"name\": \"Tỉnh Bắc Ninh\",\n        \"matp\": \"27\"\n    },\n    {\n        \"name\": \"Tỉnh Hải Dương\",\n        \"matp\": \"30\"\n    },\n    {\n        \"name\": \"Thành phố Hải Phòng\",\n        \"matp\": \"31\"\n    },\n    {\n        \"name\": \"Tỉnh Hưng Yên\",\n        \"matp\": \"33\"\n    },\n    {\n        \"name\": \"Tỉnh Thái Bình\",\n        \"matp\": \"34\"\n    },\n    {\n        \"name\": \"Tỉnh Hà Nam\",\n        \"matp\": \"35\"\n    },\n    {\n        \"name\": \"Tỉnh Nam Định\",\n        \"matp\": \"36\"\n    },\n    {\n        \"name\": \"Tỉnh Ninh Bình\",\n        \"matp\": \"37\"\n    },\n    {\n        \"name\": \"Tỉnh Thanh Hóa\",\n        \"matp\": \"38\"\n    },\n    {\n        \"name\": \"Tỉnh Nghệ An\",\n        \"matp\": \"40\"\n    },\n    {\n        \"name\": \"Tỉnh Hà Tĩnh\",\n        \"matp\": \"42\"\n    },\n    {\n        \"name\": \"Tỉnh Quảng Bình\",\n        \"matp\": \"44\"\n    },\n    {\n        \"name\": \"Tỉnh Quảng Trị\",\n        \"matp\": \"45\"\n    },\n    {\n        \"name\": \"Tỉnh Thừa Thiên Huế\",\n        \"matp\": \"46\"\n    },\n    {\n        \"name\": \"Thành phố Đà Nẵng\",\n        \"matp\": \"48\"\n    },\n    {\n        \"name\": \"Tỉnh Quảng Nam\",\n        \"matp\": \"49\"\n    },\n    {\n        \"name\": \"Tỉnh Quảng Ngãi\",\n        \"matp\": \"51\"\n    },\n    {\n        \"name\": \"Tỉnh Bình Định\",\n        \"matp\": \"52\"\n    },\n    {\n        \"name\": \"Tỉnh Phú Yên\",\n        \"matp\": \"54\"\n    },\n    {\n        \"name\": \"Tỉnh Khánh Hòa\",\n        \"matp\": \"56\"\n    },\n    {\n        \"name\": \"Tỉnh Ninh Thuận\",\n        \"matp\": \"58\"\n    },\n    {\n        \"name\": \"Tỉnh Bình Thuận\",\n        \"matp\": \"60\"\n    },\n    {\n        \"name\": \"Tỉnh Kon Tum\",\n        \"matp\": \"62\"\n    },\n    {\n        \"name\": \"Tỉnh Gia Lai\",\n        \"matp\": \"64\"\n    },\n    {\n        \"name\": \"Tỉnh Đắk Lắk\",\n        \"matp\": \"66\"\n    },\n    {\n        \"name\": \"Tỉnh Đắk Nông\",\n        \"matp\": \"67\"\n    },\n    {\n        \"name\": \"Tỉnh Lâm Đồng\",\n        \"matp\": \"68\"\n    },\n    {\n        \"name\": \"Tỉnh Bình Phước\",\n        \"matp\": \"70\"\n    },\n    {\n        \"name\": \"Tỉnh Tây Ninh\",\n        \"matp\": \"72\"\n    },\n    {\n        \"name\": \"Tỉnh Bình Dương\",\n        \"matp\": \"74\"\n    },\n    {\n        \"name\": \"Tỉnh Đồng Nai\",\n        \"matp\": \"75\"\n    },\n    {\n        \"name\": \"Tỉnh Bà Rịa - Vũng Tàu\",\n        \"matp\": \"77\"\n    },\n    {\n        \"name\": \"Thành phố Hồ Chí Minh\",\n        \"matp\": \"79\"\n    },\n    {\n        \"name\": \"Tỉnh Long An\",\n        \"matp\": \"80\"\n    },\n    {\n        \"name\": \"Tỉnh Tiền Giang\",\n        \"matp\": \"82\"\n    },\n    {\n        \"name\": \"Tỉnh Bến Tre\",\n        \"matp\": \"83\"\n    },\n    {\n        \"name\": \"Tỉnh Trà Vinh\",\n        \"matp\": \"84\"\n    },\n    {\n        \"name\": \"Tỉnh Vĩnh Long\",\n        \"matp\": \"86\"\n    },\n    {\n        \"name\": \"Tỉnh Đồng Tháp\",\n        \"matp\": \"87\"\n    },\n    {\n        \"name\": \"Tỉnh An Giang\",\n        \"matp\": \"89\"\n    },\n    {\n        \"name\": \"Tỉnh Kiên Giang\",\n        \"matp\": \"91\"\n    },\n    {\n        \"name\": \"Thành phố Cần Thơ\",\n        \"matp\": \"92\"\n    },\n    {\n        \"name\": \"Tỉnh Hậu Giang\",\n        \"matp\": \"93\"\n    },\n    {\n        \"name\": \"Tỉnh Sóc Trăng\",\n        \"matp\": \"94\"\n    },\n    {\n        \"name\": \"Tỉnh Bạc Liêu\",\n        \"matp\": \"95\"\n    },\n    {\n        \"name\": \"Tỉnh Cà Mau\",\n        \"matp\": \"96\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get QuanHuyen by matp",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/address/QH?matp=83",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"address",
+								"QH"
+							],
+							"query": [
+								{
+									"key": "matp",
+									"value": "83"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get QuanHuyen by matp",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/address/QH?matp=83",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"address",
+										"QH"
+									],
+									"query": [
+										{
+											"key": "matp",
+											"value": "83"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 08 Nov 2021 07:23:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"name\": \"Thành phố Bến Tre\",\n        \"maqh\": \"829\"\n    },\n    {\n        \"name\": \"Huyện Châu Thành\",\n        \"maqh\": \"831\"\n    },\n    {\n        \"name\": \"Huyện Chợ Lách\",\n        \"maqh\": \"832\"\n    },\n    {\n        \"name\": \"Huyện Mỏ Cày Nam\",\n        \"maqh\": \"833\"\n    },\n    {\n        \"name\": \"Huyện Giồng Trôm\",\n        \"maqh\": \"834\"\n    },\n    {\n        \"name\": \"Huyện Bình Đại\",\n        \"maqh\": \"835\"\n    },\n    {\n        \"name\": \"Huyện Ba Tri\",\n        \"maqh\": \"836\"\n    },\n    {\n        \"name\": \"Huyện Thạnh Phú\",\n        \"maqh\": \"837\"\n    },\n    {\n        \"name\": \"Huyện Mỏ Cày Bắc\",\n        \"maqh\": \"838\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get xa phuong thi tran by maqh",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/address/XPTT?maqh=832",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"address",
+								"XPTT"
+							],
+							"query": [
+								{
+									"key": "maqh",
+									"value": "832"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get xa phuong thi tran by maqh",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/address/XPTT?maqh=832",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"address",
+										"XPTT"
+									],
+									"query": [
+										{
+											"key": "maqh",
+											"value": "832"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 08 Nov 2021 07:24:20 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"name\": \"Thị trấn Chợ Lách\"\n    },\n    {\n        \"name\": \"Xã Phú Phụng\"\n    },\n    {\n        \"name\": \"Xã Sơn Định\"\n    },\n    {\n        \"name\": \"Xã Vĩnh Bình\"\n    },\n    {\n        \"name\": \"Xã Hòa Nghĩa\"\n    },\n    {\n        \"name\": \"Xã Long Thới\"\n    },\n    {\n        \"name\": \"Xã Phú Sơn\"\n    },\n    {\n        \"name\": \"Xã Tân Thiềng\"\n    },\n    {\n        \"name\": \"Xã Vĩnh Thành\"\n    },\n    {\n        \"name\": \"Xã Vĩnh Hòa\"\n    },\n    {\n        \"name\": \"Xã Hưng Khánh Trung B\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Brand",
+			"item": [
+				{
+					"name": "get all brand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/brand",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"brand"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all brand",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/brand",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"brand"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Nov 2021 13:01:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"name\": \"Nike\",\n        \"code\": \"nike\",\n        \"imagePath\": \"logo.png\"\n    },\n    {\n        \"name\": \"Puma\",\n        \"code\": \"pm\",\n        \"imagePath\": \"logo.png\"\n    },\n    {\n        \"name\": \"Adidas\",\n        \"code\": \"adi\",\n        \"imagePath\": \"logo.png\"\n    },\n    {\n        \"name\": \"Superem\",\n        \"code\": \"sup\",\n        \"imagePath\": \"logo.png\"\n    },\n    {\n        \"name\": \"Thượng Đình\",\n        \"code\": \"td\",\n        \"imagePath\": \"logo.png\"\n    },\n    {\n        \"name\": \"Other\",\n        \"code\": \"oth\",\n        \"imagePath\": \"logo.png\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "add new brand",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "brand",
+									"value": "{\"name\":\"Nike\",\n\"code\":\"nike\"}",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/8120/OneDrive/Pictures/00d44e0fee70192e4061.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/brand",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"brand"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add new brand",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Nike\",\r\n    \"code\":\"NI\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/brand",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"brand"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 08 Nov 2021 17:15:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Nike\",\n    \"code\": \"NI\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Color",
+			"item": [
+				{
+					"name": "get all color",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/color",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"color"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all color",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/color",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"color"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 08 Nov 2021 17:32:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"name\": \"Vàng\",\n        \"code\": \"Orange\"\n    },\n    {\n        \"name\": \"Đỏ\",\n        \"code\": \"red\"\n    },\n    {\n        \"name\": \"Đen\",\n        \"code\": \"black\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "add new color",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Đen\",\r\n    \"code\":\"black\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/color",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"color"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add new color",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Đen\",\r\n    \"code\":\"black\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/color",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"color"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 08 Nov 2021 17:32:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Đen\",\n    \"code\": \"black\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ChatLieu",
+			"item": [
+				{
+					"name": "add new chat lieu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"cao su\",\r\n    \"code\":\"cs\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/chatlieu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"chatlieu"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add new chat lieu",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"cao su\",\r\n    \"code\":\"cs\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/chatlieu",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"chatlieu"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 08 Nov 2021 17:35:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"cao su\",\n    \"code\": \"cs\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get all chat lieu",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/chatlieu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"chatlieu"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all chat lieu",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/chatlieu",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"chatlieu"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 08 Nov 2021 17:35:14 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"name\": \"Da\",\n        \"code\": \"da\"\n    },\n    {\n        \"name\": \"nhua deo\",\n        \"code\": \"sil\"\n    },\n    {\n        \"name\": \"cao su\",\n        \"code\": \"cs\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "add new product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images",
+									"type": "file",
+									"src": [
+										"/C:/Users/8120/OneDrive/Pictures/pri158634340-1595223655011283523680.webp",
+										"/C:/Users/8120/OneDrive/Pictures/Untitled-1.jpg"
+									]
+								},
+								{
+									"key": "product",
+									"value": "{\n\t\"title\":\"giay adidas vip\",\n\t\"productCode\":\"asfag\",\n\t\"price\":260231.0,\n        \"quantity\":100,\n\t\"describes\":\"null\",\n\t\"gioiTinh\":\"Nam\",\n\t\"brandCode\":\"adi\",\n\t\"chatLieuCode\":\"pu\",\n\t\"colorCode\":\"red\"\n}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/admin/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add new product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "images",
+											"type": "file",
+											"src": [
+												"/C:/Users/8120/OneDrive/Pictures/Capture.PNG",
+												"/C:/Users/8120/OneDrive/Pictures/pri158634340-1595223655011283523680.webp",
+												"/C:/Users/8120/OneDrive/Pictures/Untitled-1.jpg",
+												"/C:/Users/8120/OneDrive/Pictures/Untitled-3.jpg",
+												"/C:/Users/8120/OneDrive/Pictures/Untitled-6.jpg"
+											]
+										},
+										{
+											"key": "product",
+											"value": "{\n\t\"title\":\"giay adidas vip\",\n\t\"productCode\":\"asfag\",\n\t\"price\":260231.0,\n\t\"describes\":\"null\",\n\t\"gioiTinh\":\"Nam\",\n\t\"brandCode\":\"ADI\",\n\t\"chatLieuCode\":\"sil\",\n\t\"colorCode\":\"red\"\n}",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/admin/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"admin",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 08 Nov 2021 18:11:06 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 6,\n    \"title\": \"giay adidas vip\",\n    \"productCode\": \"asfag\",\n    \"price\": 260231,\n    \"describes\": \"null\",\n    \"brandCode\": \"ADI\",\n    \"gioiTinh\": \"Nam\",\n    \"colorCode\": \"red\",\n    \"chatLieuCode\": \"sil\",\n    \"images\": [\n        \"Capture.PNG\",\n        \"pri158634340-1595223655011283523680.webp\",\n        \"Untitled-1.jpg\",\n        \"Untitled-3.jpg\",\n        \"Untitled-6.jpg\"\n    ],\n    \"createdDate\": \"2021-11-08T18:11:06.237+00:00\",\n    \"modifyDate\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "get all product in admin (co phan trang)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/admin/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "size",
+									"value": "5",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "deactive",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all product in admin (co phan trang)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/admin/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"admin",
+										"products"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "size",
+											"value": "5",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Nov 2021 14:39:56 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"totalItems\": 8,\n    \"totalPages\": 2,\n    \"currentPage\": 0,\n    \"products\": [\n        {\n            \"id\": 2,\n            \"title\": \"giay adidas vip\",\n            \"productCode\": \"asfag\",\n            \"price\": 260231,\n            \"quantity\": 100,\n            \"describes\": \"null\",\n            \"brandName\": \"Adidas\",\n            \"gioiTinh\": \"Nam\",\n            \"colorName\": \"Màu Đỏ\",\n            \"chatLieuName\": \"PU\",\n            \"images\": \"pri158634340-1595223655011283523680.webp\",\n            \"createdDate\": \"2021-11-11T07:15:50.000+00:00\",\n            \"modifyDate\": \"2021-11-11T07:15:50.000+00:00\"\n        },\n        {\n            \"id\": 4,\n            \"title\": \"giay adidas vip\",\n            \"productCode\": \"asfag\",\n            \"price\": 260231,\n            \"quantity\": 100,\n            \"describes\": \"null\",\n            \"brandName\": \"Nike\",\n            \"gioiTinh\": \"Nam\",\n            \"colorName\": \"Màu Đỏ\",\n            \"chatLieuName\": \"PU\",\n            \"images\": \"pri158634340-1595223655011283523680.webp\",\n            \"createdDate\": \"2021-11-11T07:40:43.000+00:00\",\n            \"modifyDate\": \"2021-11-11T07:40:43.000+00:00\"\n        },\n        {\n            \"id\": 5,\n            \"title\": \"giay adidas vip\",\n            \"productCode\": \"asfag\",\n            \"price\": 260231,\n            \"quantity\": 100,\n            \"describes\": \"null\",\n            \"brandName\": \"Nike\",\n            \"gioiTinh\": \"Nam\",\n            \"colorName\": \"Màu Đỏ\",\n            \"chatLieuName\": \"PU\",\n            \"images\": \"pri158634340-1595223655011283523680.webp\",\n            \"createdDate\": \"2021-11-11T07:40:44.000+00:00\",\n            \"modifyDate\": \"2021-11-11T07:40:44.000+00:00\"\n        },\n        {\n            \"id\": 6,\n            \"title\": \"giay adidas vip\",\n            \"productCode\": \"asfag\",\n            \"price\": 260231,\n            \"quantity\": 100,\n            \"describes\": \"null\",\n            \"brandName\": \"Nike\",\n            \"gioiTinh\": \"Nam\",\n            \"colorName\": \"Màu Đỏ\",\n            \"chatLieuName\": \"PU\",\n            \"images\": \"pri158634340-1595223655011283523680.webp\",\n            \"createdDate\": \"2021-11-11T07:40:44.000+00:00\",\n            \"modifyDate\": \"2021-11-11T07:40:44.000+00:00\"\n        },\n        {\n            \"id\": 7,\n            \"title\": \"giay adidas vip\",\n            \"productCode\": \"asfag\",\n            \"price\": 260231,\n            \"quantity\": 100,\n            \"describes\": \"null\",\n            \"brandName\": \"Nike\",\n            \"gioiTinh\": \"Nam\",\n            \"colorName\": \"Màu Đỏ\",\n            \"chatLieuName\": \"PU\",\n            \"images\": \"pri158634340-1595223655011283523680.webp\",\n            \"createdDate\": \"2021-11-11T07:40:45.000+00:00\",\n            \"modifyDate\": \"2021-11-11T07:40:45.000+00:00\"\n        },\n        {\n            \"id\": 8,\n            \"title\": \"giay adidas vip\",\n            \"productCode\": \"asfag\",\n            \"price\": 260231,\n            \"quantity\": 100,\n            \"describes\": \"null\",\n            \"brandName\": \"Nike\",\n            \"gioiTinh\": \"Nam\",\n            \"colorName\": \"Màu Đỏ\",\n            \"chatLieuName\": \"PU\",\n            \"images\": \"pri158634340-1595223655011283523680.webp\",\n            \"createdDate\": \"2021-11-11T08:03:36.000+00:00\",\n            \"modifyDate\": \"2021-11-11T08:03:36.000+00:00\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "update product by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"title\":\"giay adidas vip\",\r\n\t\"productCode\":\"aag\",\r\n\t\"price\":260231.0,\r\n    \"quantity\":100,\r\n\t\"describes\":\"null\",\r\n\t\"gioiTinh\":\"Nam\",\r\n\t\"brandCode\":\"adi\",\r\n\t\"chatLieuCode\":\"pu\",\r\n\t\"colorCode\":\"red\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update product by id",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"title\":\"giay adidas vip\",\r\n\t\"productCode\":\"aag\",\r\n\t\"price\":260231.0,\r\n    \"quantity\":100,\r\n\t\"describes\":\"null\",\r\n\t\"gioiTinh\":\"Nam\",\r\n\t\"brandCode\":\"adi\",\r\n\t\"chatLieuCode\":\"pu\",\r\n\t\"colorCode\":\"red\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/products/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Nov 2021 12:43:09 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"title\": \"giay adidas vip\",\n    \"productCode\": \"aag\",\n    \"price\": 260231,\n    \"quantity\": 100,\n    \"describes\": \"null\",\n    \"brandCode\": \"adi\",\n    \"gioiTinh\": \"Nam\",\n    \"colorCode\": \"red\",\n    \"chatLieuCode\": \"pu\",\n    \"images\": [\n        \"pri158634340-1595223655011283523680.webp\",\n        \"Untitled-1.jpg\"\n    ],\n    \"createdDate\": \"2021-11-11T07:40:40.000+00:00\",\n    \"modifyDate\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "delete product by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get product by id Customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"10"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get product by id Customer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/products/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Nov 2021 15:36:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"title\": \"giay adidas vip\",\n    \"productCode\": \"asfag\",\n    \"price\": 260231,\n    \"quantity\": 100,\n    \"describes\": \"null\",\n    \"brandName\": \"Nike\",\n    \"gioiTinh\": \"Nam\",\n    \"colorName\": \"Màu Đỏ\",\n    \"chatLieuName\": \"PU\",\n    \"views\": 0,\n    \"images\": [\n        \"pri158634340-1595223655011283523680.webp\",\n        \"Untitled-1.jpg\"\n    ],\n    \"createdDate\": \"2021-11-11T07:40:43.000+00:00\",\n    \"modifyDate\": \"2021-11-11T07:40:43.000+00:00\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get all product in customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "size",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "title",
+									"value": "asd",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all product in customer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "size",
+											"value": "10",
+											"disabled": true
+										},
+										{
+											"key": "title",
+											"value": "asd",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Nov 2021 16:02:11 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"totalItems\": 8,\n    \"totalPages\": 1,\n    \"currentPage\": 0,\n    \"products\": [\n        {\n            \"id\": 2,\n            \"title\": \"giay adidas vip\",\n            \"productCode\": \"asfag\",\n            \"price\": 260231,\n            \"quantity\": 100,\n            \"describes\": \"null\",\n            \"brandName\": \"Adidas\",\n            \"gioiTinh\": \"Nam\",\n            \"colorName\": \"Màu Đỏ\",\n            \"chatLieuName\": \"PU\",\n            \"views\": 0,\n            \"images\": [\n                \"pri158634340-1595223655011283523680.webp\",\n                \"Untitled-1.jpg\"\n            ],\n            \"createdDate\": \"2021-11-11T07:15:50.000+00:00\",\n            \"modifyDate\": \"2021-11-11T07:15:50.000+00:00\"\n        },\n        {\n            \"id\": 4,\n            \"title\": \"giay adidas vip\",\n            \"productCode\": \"asfag\",\n            \"price\": 260231,\n            \"quantity\": 100,\n            \"describes\": \"null\",\n            \"brandName\": \"Nike\",\n            \"gioiTinh\": \"Nam\",\n            \"colorName\": \"Màu Đỏ\",\n            \"chatLieuName\": \"PU\",\n            \"views\": 0,\n            \"images\": [\n                \"pri158634340-1595223655011283523680.webp\",\n                \"Untitled-1.jpg\"\n            ],\n            \"createdDate\": \"2021-11-11T07:40:43.000+00:00\",\n            \"modifyDate\": \"2021-11-11T07:40:43.000+00:00\"\n        },\n        {\n            \"id\": 5,\n            \"title\": \"giay adidas vip\",\n            \"productCode\": \"asfag\",\n            \"price\": 260231,\n            \"quantity\": 100,\n            \"describes\": \"null\",\n            \"brandName\": \"Nike\",\n            \"gioiTinh\": \"Nam\",\n            \"colorName\": \"Màu Đỏ\",\n            \"chatLieuName\": \"PU\",\n            \"views\": 0,\n            \"images\": [\n                \"pri158634340-1595223655011283523680.webp\",\n                \"Untitled-1.jpg\"\n            ],\n            \"createdDate\": \"2021-11-11T07:40:44.000+00:00\",\n            \"modifyDate\": \"2021-11-11T07:40:44.000+00:00\"\n        },\n        {\n            \"id\": 6,\n            \"title\": \"giay adidas vip\",\n            \"productCode\": \"asfag\",\n            \"price\": 260231,\n            \"quantity\": 100,\n            \"describes\": \"null\",\n            \"brandName\": \"Nike\",\n            \"gioiTinh\": \"Nam\",\n            \"colorName\": \"Màu Đỏ\",\n            \"chatLieuName\": \"PU\",\n            \"views\": 0,\n            \"images\": [\n                \"pri158634340-1595223655011283523680.webp\",\n                \"Untitled-1.jpg\"\n            ],\n            \"createdDate\": \"2021-11-11T07:40:44.000+00:00\",\n            \"modifyDate\": \"2021-11-11T07:40:44.000+00:00\"\n        },\n        {\n            \"id\": 7,\n            \"title\": \"giay adidas vip\",\n            \"productCode\": \"asfag\",\n            \"price\": 260231,\n            \"quantity\": 100,\n            \"describes\": \"null\",\n            \"brandName\": \"Nike\",\n            \"gioiTinh\": \"Nam\",\n            \"colorName\": \"Màu Đỏ\",\n            \"chatLieuName\": \"PU\",\n            \"views\": 0,\n            \"images\": [\n                \"pri158634340-1595223655011283523680.webp\",\n                \"Untitled-1.jpg\"\n            ],\n            \"createdDate\": \"2021-11-11T07:40:45.000+00:00\",\n            \"modifyDate\": \"2021-11-11T07:40:45.000+00:00\"\n        },\n        {\n            \"id\": 8,\n            \"title\": \"giay adidas vip\",\n            \"productCode\": \"asfag\",\n            \"price\": 260231,\n            \"quantity\": 100,\n            \"describes\": \"null\",\n            \"brandName\": \"Nike\",\n            \"gioiTinh\": \"Nam\",\n            \"colorName\": \"Màu Đỏ\",\n            \"chatLieuName\": \"PU\",\n            \"views\": 0,\n            \"images\": [\n                \"pri158634340-1595223655011283523680.webp\",\n                \"Untitled-1.jpg\"\n            ],\n            \"createdDate\": \"2021-11-11T08:03:36.000+00:00\",\n            \"modifyDate\": \"2021-11-11T08:03:36.000+00:00\"\n        },\n        {\n            \"id\": 9,\n            \"title\": \"giay adidas vip\",\n            \"productCode\": \"asfag\",\n            \"price\": 260231,\n            \"quantity\": 100,\n            \"describes\": \"null\",\n            \"brandName\": \"Adidas\",\n            \"gioiTinh\": \"Nam\",\n            \"colorName\": \"Màu Đỏ\",\n            \"chatLieuName\": \"PU\",\n            \"views\": 0,\n            \"images\": [\n                \"pri158634340-1595223655011283523680.webp\",\n                \"Untitled-1.jpg\"\n            ],\n            \"createdDate\": \"2021-11-11T08:04:27.000+00:00\",\n            \"modifyDate\": \"2021-11-11T08:04:27.000+00:00\"\n        },\n        {\n            \"id\": 10,\n            \"title\": \"giay adidas vip\",\n            \"productCode\": \"asfag\",\n            \"price\": 260231,\n            \"quantity\": 100,\n            \"describes\": \"null\",\n            \"brandName\": \"Adidas\",\n            \"gioiTinh\": \"Nam\",\n            \"colorName\": \"Màu Đỏ\",\n            \"chatLieuName\": \"PU\",\n            \"views\": 0,\n            \"images\": [\n                \"pri158634340-1595223655011283523680.webp\",\n                \"Untitled-1.jpg\"\n            ],\n            \"createdDate\": \"2021-11-12T14:39:37.000+00:00\",\n            \"modifyDate\": \"2021-11-12T14:39:37.000+00:00\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "get product in admin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/admin/products/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"products",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get product in admin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/admin/products/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"admin",
+										"products",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Nov 2021 15:37:48 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"title\": \"giay adidas vip\",\n    \"productCode\": \"asfag\",\n    \"price\": 260231,\n    \"quantity\": 100,\n    \"describes\": \"null\",\n    \"brandCode\": \"nike\",\n    \"gioiTinh\": \"Nam\",\n    \"colorCode\": \"red\",\n    \"chatLieuCode\": \"pu\",\n    \"images\": [\n        \"pri158634340-1595223655011283523680.webp\",\n        \"Untitled-1.jpg\"\n    ],\n    \"createdDate\": \"2021-11-11T07:40:44.000+00:00\",\n    \"modifyDate\": null,\n    \"views\": 0\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "AnalysisApi",
+			"item": [
+				{
+					"name": "get info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/admin/analysis",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"analysis"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get info",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/admin/analysis",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"admin",
+										"analysis"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Nov 2021 16:38:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"totalProduct\": 8,\n    \"totalBrand\": 6,\n    \"totalOrder\": 0\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "OrdersApi",
+			"item": [
+				{
+					"name": "create an Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullname\":\"le nhut duy\",\r\n\t\"phoneNumber\":\"0945379320\",\r\n\t\"email\":\"nhutduy30520@gmail.com\",\r\n\t\"note\":\"giao nhanh nhanh dum cai\",\r\n\t\"address\":\"ap Phu Hoi, xa Vinh Thanh, Cho Lach, Ben Tre\",\r\n\t\"total\":\"30000\",\r\n\t\"items\": [\r\n        {\r\n            \"productId\":\"2\",\r\n            \"quantity\":1,\r\n            \"price\":10000\r\n        },\r\n        {\r\n            \"productId\":\"4\",\r\n            \"quantity\":1,\r\n            \"price\":10000\r\n        },\r\n        {\r\n            \"productId\":\"5\",\r\n            \"quantity\":1,\r\n            \"price\":10000\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create an Order",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"fullname\":\"le nhut duy\",\r\n\t\"phoneNumber\":\"0945379320\",\r\n\t\"email\":\"nhutduy30520@gmail.com\",\r\n\t\"note\":\"giao nhanh nhanh dum cai\",\r\n\t\"address\":\"ap Phu Hoi, xa Vinh Thanh, Cho Lach, Ben Tre\",\r\n\t\"total\":\"30000\",\r\n\t\"items\": [\r\n        {\r\n            \"productId\":\"2\",\r\n            \"quantity\":1,\r\n            \"price\":10000\r\n        },\r\n        {\r\n            \"productId\":\"4\",\r\n            \"quantity\":1,\r\n            \"price\":10000\r\n        },\r\n        {\r\n            \"productId\":\"5\",\r\n            \"quantity\":1,\r\n            \"price\":10000\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/orders",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 Nov 2021 18:29:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"orderId\": 7\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllOrders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/admin/orders/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"orders",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAllOrders",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/admin/orders/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"admin",
+										"orders",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 Nov 2021 18:28:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"fullname\": \"le nhut duy\",\n        \"phoneNumber\": \"0945379320\",\n        \"email\": \"nhutduy30520@gmail.com\",\n        \"address\": \"ap Phu Hoi, xa Vinh Thanh, Cho Lach, Ben Tre\",\n        \"note\": \"giao nhanh nhanh dum cai\",\n        \"total\": 30000,\n        \"orderState\": \"DELIVERY\",\n        \"createdDate\": \"2021-11-21T17:45:50.000+00:00\"\n    },\n    {\n        \"id\": 2,\n        \"fullname\": \"le nhut duy\",\n        \"phoneNumber\": \"0945379320\",\n        \"email\": \"nhutduy30520@gmail.com\",\n        \"address\": \"ap Phu Hoi, xa Vinh Thanh, Cho Lach, Ben Tre\",\n        \"note\": \"giao nhanh nhanh dum cai\",\n        \"total\": 30000,\n        \"orderState\": \"DELIVERY\",\n        \"createdDate\": \"2021-11-21T17:45:52.000+00:00\"\n    },\n    {\n        \"id\": 3,\n        \"fullname\": \"le nhut duy\",\n        \"phoneNumber\": \"0945379320\",\n        \"email\": \"nhutduy30520@gmail.com\",\n        \"address\": \"ap Phu Hoi, xa Vinh Thanh, Cho Lach, Ben Tre\",\n        \"note\": \"giao nhanh nhanh dum cai\",\n        \"total\": 30000,\n        \"orderState\": \"DELIVERY\",\n        \"createdDate\": \"2021-11-21T17:45:52.000+00:00\"\n    },\n    {\n        \"id\": 4,\n        \"fullname\": \"le nhut duy\",\n        \"phoneNumber\": \"0945379320\",\n        \"email\": \"nhutduy30520@gmail.com\",\n        \"address\": \"ap Phu Hoi, xa Vinh Thanh, Cho Lach, Ben Tre\",\n        \"note\": \"giao nhanh nhanh dum cai\",\n        \"total\": 30000,\n        \"orderState\": \"DELIVERY\",\n        \"createdDate\": \"2021-11-21T17:45:55.000+00:00\"\n    },\n    {\n        \"id\": 5,\n        \"fullname\": \"le nhut duy\",\n        \"phoneNumber\": \"0945379320\",\n        \"email\": \"nhutduy30520@gmail.com\",\n        \"address\": \"ap Phu Hoi, xa Vinh Thanh, Cho Lach, Ben Tre\",\n        \"note\": \"giao nhanh nhanh dum cai\",\n        \"total\": 30000,\n        \"orderState\": \"DELIVERY\",\n        \"createdDate\": \"2021-11-21T17:45:56.000+00:00\"\n    },\n    {\n        \"id\": 6,\n        \"fullname\": \"le nhut duy\",\n        \"phoneNumber\": \"0945379320\",\n        \"email\": \"nhutduy30520@gmail.com\",\n        \"address\": \"ap Phu Hoi, xa Vinh Thanh, Cho Lach, Ben Tre\",\n        \"note\": \"giao nhanh nhanh dum cai\",\n        \"total\": 30000,\n        \"orderState\": \"DELIVERY\",\n        \"createdDate\": \"2021-11-21T17:45:56.000+00:00\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get Order by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/admin/orders/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"orders",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get Order by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/admin/orders/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"admin",
+										"orders",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 Nov 2021 18:29:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"fullname\": \"le nhut duy\",\n    \"phoneNumber\": \"0945379320\",\n    \"email\": \"nhutduy30520@gmail.com\",\n    \"address\": \"ap Phu Hoi, xa Vinh Thanh, Cho Lach, Ben Tre\",\n    \"note\": \"giao nhanh nhanh dum cai\",\n    \"total\": 30000,\n    \"orderState\": \"DELIVERY\",\n    \"createdDate\": \"2021-11-21T17:45:50.000+00:00\",\n    \"listItem\": [\n        {\n            \"productId\": 1,\n            \"image\": \"pri158634340-1595223655011283523680.webp\",\n            \"name\": \"giay adidas vip\",\n            \"price\": 10000,\n            \"quantity\": 10000\n        },\n        {\n            \"productId\": 2,\n            \"image\": \"pri158634340-1595223655011283523680.webp\",\n            \"name\": \"giay adidas vip\",\n            \"price\": 10000,\n            \"quantity\": 10000\n        },\n        {\n            \"productId\": 3,\n            \"image\": \"pri158634340-1595223655011283523680.webp\",\n            \"name\": \"giay adidas vip\",\n            \"price\": 10000,\n            \"quantity\": 10000\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "CommentsApi",
+			"item": [
+				{
+					"name": "create new Cmt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullname\":\"le nhut duy\",\r\n    \"email\":\"nhutduy30520@gmail.com\",\r\n    \"phoneNumber\":\"0945379320\",\r\n    \"content\":\"abcdefghiklmnopq\",\r\n    \"rate\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/comments/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"comments",
+								"10"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create new Cmt",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"fullname\":\"le nhut duy\",\r\n    \"email\":\"nhutduy30520@gmail.com\",\r\n    \"phoneNumber\":\"0945379320\",\r\n    \"content\":\"abcdefghiklmnopq\",\r\n    \"rate\":5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/comments/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"comments",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 Nov 2021 10:19:34 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"fullname\": \"le nhut duy\",\n    \"email\": \"nhutduy30520@gmail.com\",\n    \"phoneNumber\": \"0945379320\",\n    \"content\": \"abcdefghiklmnopq\",\n    \"rate\": 5,\n    \"createdDate\": \"2021-11-22T10:19:34.422+00:00\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get All comments by productId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/comments/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"comments",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get All comments by productId",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/comments/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"comments",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 Nov 2021 10:21:05 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"fullname\": \"le nhut duy\",\n        \"email\": \"nhutduy30520@gmail.com\",\n        \"phoneNumber\": \"0945379320\",\n        \"content\": \"abcdefghiklmnopq\",\n        \"rate\": 5,\n        \"createdDate\": \"2021-11-22T10:19:34.000+00:00\"\n    },\n    {\n        \"id\": 2,\n        \"fullname\": \"le nhut duy\",\n        \"email\": \"nhutduy30520@gmail.com\",\n        \"phoneNumber\": \"0945379320\",\n        \"content\": \"abcdefghiklmnopq\",\n        \"rate\": 5,\n        \"createdDate\": \"2021-11-22T10:20:56.000+00:00\"\n    },\n    {\n        \"id\": 3,\n        \"fullname\": \"le nhut duy\",\n        \"email\": \"nhutduy30520@gmail.com\",\n        \"phoneNumber\": \"0945379320\",\n        \"content\": \"abcdefghiklmnopq\",\n        \"rate\": 5,\n        \"createdDate\": \"2021-11-22T10:20:57.000+00:00\"\n    },\n    {\n        \"id\": 4,\n        \"fullname\": \"le nhut duy\",\n        \"email\": \"nhutduy30520@gmail.com\",\n        \"phoneNumber\": \"0945379320\",\n        \"content\": \"abcdefghiklmnopq\",\n        \"rate\": 5,\n        \"createdDate\": \"2021-11-22T10:20:58.000+00:00\"\n    },\n    {\n        \"id\": 5,\n        \"fullname\": \"le nhut duy\",\n        \"email\": \"nhutduy30520@gmail.com\",\n        \"phoneNumber\": \"0945379320\",\n        \"content\": \"abcdefghiklmnopq\",\n        \"rate\": 5,\n        \"createdDate\": \"2021-11-22T10:20:58.000+00:00\"\n    },\n    {\n        \"id\": 6,\n        \"fullname\": \"le nhut duy\",\n        \"email\": \"nhutduy30520@gmail.com\",\n        \"phoneNumber\": \"0945379320\",\n        \"content\": \"abcdefghiklmnopq\",\n        \"rate\": 5,\n        \"createdDate\": \"2021-11-22T10:20:58.000+00:00\"\n    },\n    {\n        \"id\": 7,\n        \"fullname\": \"le nhut duy\",\n        \"email\": \"nhutduy30520@gmail.com\",\n        \"phoneNumber\": \"0945379320\",\n        \"content\": \"abcdefghiklmnopq\",\n        \"rate\": 5,\n        \"createdDate\": \"2021-11-22T10:20:59.000+00:00\"\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}

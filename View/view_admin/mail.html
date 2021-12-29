@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale= =1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie= edge">
+    <title>Document</title>
+
+    <style>
+        ul {
+            margin: 0;
+            padding-left: 30px;
+            list-style-type: square;
+        }
+
+        li {
+            padding-left: 10px;
+            margin-top: 5px;
+        }
+
+        li:first-child {
+            margin-top: 0;
+        }
+
+        a {
+            color: #33A2B2;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #33A2B2;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            margin: auto;
+            max-width: 730px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        /* Helper */
+        .hide {
+            display: none;
+        }
+
+        .text-orange-normal {
+            color: #f27c24;
+            font-size: 16px;
+        }
+
+        .text-red-normal {
+            color: #DD3937;
+            font-size: 16px;
+        }
+
+        .text-blue-big {
+            color: #173948;
+            font-size: 22px;
+        }
+
+        /* Button */
+        .button {
+            background: #f36e20;
+            color: #fff;
+            padding: 12px 25px;
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            min-width: 140px;
+            cursor: pointer;
+            border-bottom: 1px solid #8f8f8f;
+            border-right: 1px solid #8f8f8f;
+        }
+
+        .button:visited {
+            background: #f36e20;
+            color: #fff;
+            padding: 12px 25px;
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            min-width: 140px;
+            cursor: pointer;
+            border-bottom: 1px solid #8f8f8f;
+            border-right: 1px solid #8f8f8f;
+        }
+
+        .button:hover {
+            background: #db5609;
+            text-decoration: none;
+        }
+
+        .button--blue {
+            background: #355f86;
+        }
+
+        .button--blue:visited {
+            background: #355f86;
+        }
+
+        .button--blue:hover {
+            background: #1b466c;
+        }
+
+        /* Columns */
+        .two_col {
+            width: 100%;
+            float: none;
+            max-width: none;
+        }
+
+        .two-column-left {
+            float: left;
+            width: 49%;
+            overflow-wrap: break-word;
+        }
+
+        .two-column-right {
+            float: right;
+            width: 49%;
+            overflow-wrap: break-word;
+        }
+
+        @media screen and (max-width:640px) {
+
+            .two-column-left,
+            .two-column-right {
+                width: 100%;
+            }
+
+            .two-column-left {
+                margin-bottom: 15px;
+            }
+        }
+
+        /* Header */
+        .header {
+            margin-bottom: 25px;
+        }
+
+        .header-title {
+            padding: 10px 30px 30px 30px;
+            font-size: 25px;
+            font-weight: normal;
+        }
+
+        .header-progressBar img {
+            max-height: 140px;
+            width: auto;
+            max-width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .header-subText {
+            text-align: center;
+            font-style: italic;
+            font-size: 14px;
+        }
+
+        /* Section */
+        .section {
+            padding: 30px;
+            background: #fff;
+            /* box-shadow: 1px 2px 5px #888888; */
+            /* border-left: 1px solid #f0f0f0; */
+            /* border-right: 1px solid #f0f0f0; */
+            border-bottom: 10px solid #f0f0f0;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section--dark {
+            background: #f0f0f0;
+        }
+
+        .section-header {
+            background-size: 30px;
+            background-repeat: no-repeat;
+            height: 30px;
+            padding: 5px 0 15px 45px;
+            font-size: 18px;
+        }
+
+        .section-content {
+            display: inline-block;
+            width: 100%;
+        }
+
+        .section-content p:first-child {
+            margin-top: 0;
+        }
+
+        .section-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-content--justify {
+            text-align: justify;
+        }
+
+        /* Shipment Index */
+        .shipmentIndex {
+            width: 100%;
+            background-color: #e6edfe;
+            font-size: 15px;
+            border-left: 5px solid #42537d;
+        }
+
+        .shipmentIndex p {
+            padding: 10px;
+        }
+
+        /* Product */
+        .product {
+            border-bottom: 1px solid #D8D8D8;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .product:first-child {
+            padding-top: 0;
+        }
+
+        .product-productImage {
+            width: 160px;
+            vertical-align: top;
+            float: left;
+            margin-right: 40px;
+        }
+
+        .product-productImage img {
+            max-width: 160px;
+            height: auto;
+            margin-left: auto;
+        }
+
+        .product-productInfo {
+            vertical-align: top;
+            overflow-wrap: break-word;
+            float: left;
+            max-width: 400px;
+        }
+
+        @media screen and (max-width:440px) {
+            .product-productInfo {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+
+        .product-productInfo-name {
+            margin-bottom: 7px;
+        }
+
+        .product-productInfo-name a {
+            color: #173948;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .product-productInfo-price {
+            color: #DD3937;
+            font-size: 16px;
+        }
+
+        .product-productInfo-subInfo {
+            color: #585858;
+            font-size: 15px;
+        }
+
+        .product-productInfo-button {
+            margin-top: 2px;
+        }
+
+        .product-productInfo-button a {
+            background-size: 18px;
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            height: 20px;
+            padding-left: 25px;
+            padding-right: 15px;
+            font-size: 15px;
+            text-decoration: none;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .product-productInfo-button a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* Check out */
+        .checkout {
+            display: inline-block;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .checkout-info {
+            background-size: 30px;
+            background-repeat: no-repeat;
+            height: 30px;
+            color: #9AA439;
+            padding: 5px 0 5px 40px;
+            overflow-wrap: normal;
+        }
+
+        .checkout-info:first-child {
+            margin-top: 15px;
+        }
+
+
+        .checkout-amount {
+            width: 100%;
+            line-height: 24px;
+        }
+
+        .checkout-amount td {
+            height: 35px;
+        }
+
+        .checkout-amount tr.total td {
+            color: red;
+        }
+
+        .checkout-amount tr.total:last-child td {
+            height: 24px;
+        }
+
+        .checkout-amount-subtext {
+            text-align: right;
+            font-size: 12px;
+        }
+
+        .footer {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body
+    style="margin:0px;padding:0px;color:rgb(32,32,32);font-size:16px;font-weight:normal;font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif;line-height:150%">
+    <div class="content" style="min-width:360px">
+        <table width="100%" style="border:0" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="3" style="background-color:#E8E8E8" height="1px"></td>
+                    <td colspan="3"></td>
+                </tr>
+                <tr>
+                    <td style="background-color:#F8F8F8" width="1px"></td>
+                    <td style="background-color:#E8E8E8" width="1px"></td>
+                    <td style="background-color:#D1D1D1" width="1px"></td>
+                    <td>
+                        <div class="section section--dark">
+                            <div class="section-content">
+                                <h2>Lê Nhựt Duy thân mến,</h2>
+
+                                <div class="hide">
+                                </div>
+                                <p>Yêu cầu đặt hàng cho đơn hàng <span
+                                        class="text-orange-normal">#225397465718384</span> của
+                                    bạn đã được tiếp nhận và đang chờ xử lý, thời gian đặt hàng là Chủ
+                                    nhật, 11 tháng tám, 2019 10:45:15 với hình thức thanh toán là <b>Thanh toán khi
+                                        nhận hàng</p>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="section-header section-header--yourPackage">
+                                Đơn hàng của bạn</div>
+                            <div class="section-content">
+                                <div class="two-column-left">
+                                    Thời gian giao hàng dự kiến:<br>
+                                    <p style="margin-top:5px;margin-bottom:5px"> 5-7 ngày kể từ ngày đặt hàng<br>
+                                    <span class="product-productInfo-subInfo">(có thể kéo dài hơn do COVID-19)</span></p>
+                                </div>
+                                <div class="two-column-right">
+                                    <a class="button"
+                                        href="https://my.lazada.vn/customer/order/view/?tradeOrderId=225397465718384&amp;buyerEmail=nhutduy30520@gmail.com&amp;setLang=vi"
+                                        target="_blank"
+                                        data-saferedirecturl="https://www.google.com/url?q=https://my.lazada.vn/customer/order/view/?tradeOrderId% 225397465718384%26buyerEmail% nhutduy30520@gmail.com%26setLang% vi&amp;source=gmail&amp;ust=1638650319435000&amp;usg=AOvVaw2XHZyU-xAWeXvG0nYquFgG">
+                                        TÌNH TRẠNG ĐƠN HÀNG
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="section-header section-header--whatsNext">
+                                Bước tiếp theo</div>
+                            <div class="section-content section-content--justify">
+                                <ul>
+                                    <li>Bạn vui lòng chuẩn bị sẵn số tiền mặt tương ứng để thuận tiện cho việc thanh
+                                        toán.</li>
+                                    <li>Trong trường hợp đơn hàng có dịch vụ kèm theo, chúng tôi sẽ liên
+                                        hệ với bạn để xác nhận một số thông tin liên quan đến việc thực hiện dịch vụ
+                                        (thời gian, địa điểm,...).</li>
+                                    <li>Bạn không cần phải trả bất kỳ khoản tiền đặt cọc nào. Vui lòng liên hệ chúng
+                                        tôi qua hotline nếu bạn có thắc mắc cần giải đáp.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="section">
+                            <div class="section-header section-header section-header--deliveredTo">
+                                Đơn hàng được giao đến</div>
+                            <div class="section-content">
+                                <div class="two-column-left">
+                                    <span class="text-orange-normal">Lê Nhựt Duy </span> <br>
+                                    Quận Cái Răng, Cần Thơ, Phường Thường Thạnh, Nhà trọ Minh Châu 2 ,430B, KV Phú
+                                    Mỹ, P. Thường Thạnh <br>
+
+                                </div>
+                                <div class="two-column-right">
+                                    Điện thoại: 0945379320<br>
+                                    Email: <a href="mailto:+nhutduy30520@gmail.com"
+                                        target="_blank">nhutduy30520@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="section">
+                            <div class="section-header section-header--itemsDetails">
+                                Chi tiết đơn hàng</div>
+                            <div class="section-content">
+                                <div class="shipmentIndex">
+                                    <p></p>
+                                </div>
+                                <div class="product">
+                                    <div class="product-productImage">
+
+
+                                        <a href="https://www.lazada.vn/products/huong-dan-cho-nguoi-moi-hoc-lap-trinh-huong-doi-tuong-java-i290284258-s459864365.html?"
+                                            target="_blank"
+                                            data-saferedirecturl="https://www.google.com/url?q=https://www.lazada.vn/products/huong-dan-cho-nguoi-moi-hoc-lap-trinh-huong-doi-tuong-java-i290284258-s459864365.html?&amp;source=gmail&amp;ust=1638650319436000&amp;usg=AOvVaw1zWJ7dgjNfgnAbjVuqRKEt"><img
+                                                src="https://ci4.googleusercontent.com/proxy/-zkX36S2Cju9iDGGJJxX1HmPPrcURl4Dqs2wYCAWZmMG2gMVS8ZZdRpt4pO_bx9jCIFtfszVchoKxzsbZkOkYJ1GXkgqRO_YWttUPoC8_XdqEBoqgTuy=s0-d-e1-ft#https://vn-live-02.slatic.net/p/f212a6c09b5a401aa896bf1eaf7642b2.jpg"
+                                                width="160px" class="CToWUd"></a>
+                                    </div>
+                                    <div class="product-productInfo">
+                                        <div class="product-productInfo-name">
+
+
+                                            <a href="https://www.lazada.vn/products/huong-dan-cho-nguoi-moi-hoc-lap-trinh-huong-doi-tuong-java-i290284258-s459864365.html?"
+                                                target="_blank"
+                                                data-saferedirecturl="https://www.google.com/url?q=https://www.lazada.vn/products/huong-dan-cho-nguoi-moi-hoc-lap-trinh-huong-doi-tuong-java-i290284258-s459864365.html?&amp;source=gmail&amp;ust=1638650319436000&amp;usg=AOvVaw1zWJ7dgjNfgnAbjVuqRKEt">HƯỚNG
+                                                DẪN CHO NGƯỜI MỚI HỌC LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG JAVA</a>
+                                        </div>
+                                        <div class="product-productInfo-price">
+                                            VND 90.000
+                                        </div>
+                                        <div class="product-productInfo-subInfo">
+                                            Số lượng: 1
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkout">
+                                    <div class="two-column-left">
+
+
+                                        <div class="checkout-info checkout-info--deliveryType">
+                                            Giao hàng Tiêu chuẩn</div>
+                                        <div class="checkout-info checkout-info--paymentMethod">
+                                            Thanh toán khi nhận hàng</div>
+                                    </div>
+                                    <div class="two-column-right">
+                                        <table class="checkout-amount" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td valign="top">Thành tiền: </td>
+                                                    <td valign="top" style="text-align:right">VND</td>
+                                                    <td valign="top" style="text-align:right">90.000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="top">Giảm giá: </td>
+                                                    <td valign="top" style="text-align:right">VND</td>
+                                                    <td valign="top" style="text-align:right">0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="top">Phí vận chuyển: </td>
+                                                    <td valign="top" style="text-align:right">VND</td>
+                                                    <td valign="top" style="text-align:right">44.000</td>
+                                                </tr>
+                                                <tr class="total">
+                                                    <td valign="top">Tổng cộng: </td>
+                                                    <td valign="top" style="text-align:right">VND</td>
+                                                    <td valign="top" style="text-align:right">134.000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+
+
+                    <td style="background-color:#B3B3B3" width="1px"></td>
+                    <td style="background-color:#D1D1D1" width="1px"></td>
+                    <td style="background-color:#E8E8E8" width="1px"></td>
+                    <td style="background-color:#F8F8F8" width="1px"></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
